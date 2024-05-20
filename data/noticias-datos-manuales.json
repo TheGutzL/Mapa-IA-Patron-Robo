@@ -1,0 +1,277 @@
+[
+  {
+    "incidente": "robo",
+    "tipoIncidente": "asalto a mano armada",
+    "victima": "mujer de 29 años",
+    "montoRobado": 13000,
+    "moneda": "soles",
+    "ubicacion": "Panamericana Sur, altura de la Posta Médica de Macacona",
+    "distrito": "Subtanjalla",
+    "origenDelDinero": "banco BCP del Centro Comercial Mega Plaza en Ica",
+    "estado": "mujer herida, PNP continua con las investigaciones",
+    "estadoSaludVictima": "estabilizada y en recuperación en el Hospital Regional de Ica",
+    "fecha": "2024-04-18",
+    "hora": "aproximadamente 14:00",
+    "descripcion": "Una mujer de 29 años fue asaltada tras retirar 13 mil soles del Banco del Crédito del Perú (BCP) en el Centro Comercial Mega Plaza de Ica. Fue interceptada en la Panamericana Sur, altura de la Posta Médica de Macacona, distrito de Subtanjalla. La víctima recibió un impacto de bala en el pecho.",
+    "detallesAsaltantes": {
+      "numero": 2,
+      "descripcion": "Dos hombres de tez oscura a bordo de una moto lineal Pulsar NS."
+    },
+    "medioTransporte": "moto lineal",
+    "reaccionVictima": "La víctima mostró resistencia y fue herida de bala en el pecho.",
+    "respuestaPolicial": "La Policía Nacional del Perú (PNP) está investigando el caso. El personal asistencial del CAP II Macacona estabilizó a la mujer, quien luego fue trasladada al Hospital Regional de Ica.",
+    "testigos": "Varios transeúntes y la pareja de la víctima presenciaron el incidente.",
+    "medidasSeguridad": "El banco BCP y las autoridades locales están revisando los protocolos de seguridad en respuesta al aumento de los casos de marcaje.",
+    "impactoComunidad": "El incidente ha generado preocupación entre los residentes y comerciantes de la zona debido a la repetición de estos casos.",
+    "imagenesVideos": "Cámaras de seguridad del Centro Comercial Mega Plaza y del lugar del incidente están siendo revisadas por las autoridades.",
+    "accionBanco": "El banco BCP ha emitido un comunicado indicando que revisarán y reforzarán sus medidas de seguridad.",
+    "contactoTestigos": "Las autoridades han solicitado que cualquier testigo con información adicional se comunique con la comisaría de Subtanjalla.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-06",
+        "detalle": "Pareja de esposos asaltada tras retirar 20 mil soles de Mega Plaza.",
+        "ubicacion": "Urb. Puente Blanco"
+      },
+      {
+        "fecha": "2024-01-10",
+        "detalle": "Hombre asaltado tras retirar 30 mil soles del BCP de Mega Plaza.",
+        "ubicacion": "Urb. El Remanzo"
+      },
+      {
+        "fecha": "2024-01-04",
+        "detalle": "Grupo de empresarios asaltados tras retirar 60 mil soles de Interbank y BCP de Mega Plaza.",
+        "ubicacion": "Hospital Regional de Ica"
+      }
+    ],
+    "medidasPrecaucion": "Se recomienda a los clientes de bancos tomar precauciones adicionales y considerar utilizar servicios de escolta para grandes retiros de dinero.",
+    "enlace": "https://lalupa.pe/ica/ica-mujer-retiro-13-mil-soles-de-un-banco-de-mega-plaza-y-marcas-lo-alcanzaron-y-asaltaron-a-balazos-83213/",
+    "coordenadas": {
+      "latitud": -14.020542619123695,
+      "longitud": -75.76173295376083
+    }
+  },
+  {
+    "incidente": "enfrentamiento entre bandas criminales",
+    "tipoIncidente": "balacera por ajuste de cuentas",
+    "victimas": [
+      {
+        "nombre": "José Clemente Apesteguia Martínez",
+        "alias": "Chany",
+        "edad": 38,
+        "estadoSalud": "diagnóstico de carácter reservado"
+      },
+      {
+        "nombre": "Stefany Dayana Pecho Medina",
+        "alias": "Estefany",
+        "edad": 30,
+        "estadoSalud": "herida por proyectil de arma de fuego en pierna izquierda"
+      },
+      {
+        "nombre": "Miguel Ángel Espino Misael",
+        "edad": 34,
+        "estadoSalud": "traumatismo abdominal abierto"
+      }
+    ],
+    "numeroHeridos": 3,
+    "ubicacion": "Esquina de las calles Unión y Junín, afueras del Poder Judicial, frente a la Plazuela Barranca",
+    "distrito": "Ica",
+    "estado": "PNP continua con las investigaciones",
+    "fecha": "2024-04-18",
+    "hora": "alrededor de las 19:00",
+    "descripcion": "Una balacera se reportó en pleno centro de Ica, afueras del Poder Judicial, frente a la Plazuela Barranca. Fue un enfrentamiento entre bandas criminales, presuntamente por ajuste de cuentas, dejando tres heridos de bala. La PNP está investigando el caso.",
+    "detallesAsaltantes": {
+      "numero": 2,
+      "descripcion": "Dos sujetos a bordo de una motocicleta, uno de ellos armado."
+    },
+    "medioTransporte": "motocicleta",
+    "reaccionVictima": "Los heridos fueron evacuados para recibir atención médica en un hospital de Ica.",
+    "respuestaPolicial": "La Policía Nacional del Perú (PNP) está investigando el caso y tiene las identidades de los maleantes. Sus detenciones serían inminentes.",
+    "testigos": "Varios transeúntes y personas en la zona presenciaron el incidente.",
+    "medidasSeguridad": "La PNP está reforzando la seguridad en la zona y realizando operativos para capturar a los responsables.",
+    "impactoComunidad": "El incidente ha generado preocupación entre los residentes y comerciantes del centro de Ica debido a la violencia del enfrentamiento.",
+    "imagenesVideos": "Cámaras de seguridad en la zona están siendo revisadas por las autoridades.",
+    "accionBanco": "N/A",
+    "contactoTestigos": "Las autoridades han solicitado que cualquier testigo con información adicional se comunique con la comisaría de Ica.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-16",
+        "detalle": "Integrantes de la banda 'Los pepes de Ica' asaltaron a mano armada el Centro Comercial Promart.",
+        "ubicacion": "Centro Comercial Promart, Ica"
+      }
+    ],
+    "medidasPrecaucion": "Se recomienda a los ciudadanos evitar la zona en horarios nocturnos y reportar cualquier actividad sospechosa a las autoridades.",
+    "enlace": "https://lalupa.pe/ica/bandas-criminales-se-agarraron-a-balazos-en-el-centro-de-ica-y-dejan-tres-heridos-83208/",
+    "coordenadas": {
+      "latitud": -14.066763876544703,
+      "longitud": -75.72603554114863
+    }
+  },
+  {
+    "incidente": "secuestro",
+    "tipoIncidente": "tentativa de secuestro de menor",
+    "victima": {
+      "nombre": "T.G.T.",
+      "edad": 13
+    },
+    "detenidos": [
+      {
+        "nombre": "Augusto Monterrey Martínez",
+        "edad": 36
+      }
+    ],
+    "ubicacion": "Asentamiento Humano Pilar Nores de García, distrito de Subtanjalla, Ica",
+    "distrito": "Subtanjalla",
+    "hora": "5:30 a.m.",
+    "fecha": "2024-04-18",
+    "descripcion": "Un grupo de vecinos lograron capturar a uno de tres presuntos secuestradores cuya víctima era una niña de 13 años de edad. Los padres de familia indignados casi linchan al sujeto, sin embargo fue entregado a la Policía Nacional del Perú (PNP).",
+    "reaccionVecinos": "Los vecinos capturaron a uno de los presuntos secuestradores y casi lo linchan.",
+    "respuestaPolicial": "Efectivos de la Comisaría PNP de San Juan Bautista detuvieron a Augusto Monterrey Martínez (36), quien está bajo detención e investigación preliminar por el delito de tentativa de secuestro.",
+    "medidasSeguridad": "La PNP está reforzando la vigilancia en la zona para prevenir futuros incidentes.",
+    "medidasComunidad": "Se recomienda a los padres mantener vigilancia sobre sus hijos y estar atentos a cualquier actividad sospechosa en la comunidad.",
+    "testigos": "Varios vecinos del Asentamiento Humano Pilar Nores de García presenciaron el incidente.",
+    "impactoComunidad": "El incidente ha generado alarma y preocupación en la comunidad, que ahora está más alerta ante posibles intentos de secuestro.",
+    "enlace": "https://lalupa.pe/ica/ica-vecinos-capturan-a-uno-de-cuatro-sujetos-cuando-secuestraban-a-una-nina-de-13-anos-83191/",
+    "urlVideo": "https://lalupa.pe/ica/ica-vecinos-capturan-a-uno-de-cuatro-sujetos-cuando-secuestraban-a-una-nina-de-13-anos-83191/video",
+    "coordenadas": {
+      "latitud": -14.019689216851297,
+      "longitud": -75.75466271041263
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "asalto a agente bancario",
+    "ubicacion": "Galería en la esquina de las calles Huánuco y Bolívar, a una cuadra de la Plaza de Armas de Ica",
+    "distrito": "Ica",
+    "hora": "alrededor de las 4:40 p.m.",
+    "fecha": "2024-04-16",
+    "descripcion": "Esta noche un grupo de delincuentes ejecutaron un nuevo asalto a un agente bancario en pleno centro de la ciudad de Ica. El hecho se registró alrededor de las 4:40 p.m. de este martes 16 de abril. Lamentablemente, los negocios tuvieron que cerrar ante el temor frente al hecho.",
+    "detallesAsaltantes": {
+      "numero": 1,
+      "descripcion": "Un sujeto vestido de capucha amarilla, armado con un arma de fuego."
+    },
+    "objetosRobados": [
+      "caja con fuerte suma de dinero del negocio",
+      "pertences de un cliente"
+    ],
+    "medioTransporte": "moto lineal",
+    "reaccionVictimas": "Las dos mujeres que estaban a cargo de la atención entregaron la caja con dinero al ser encañonadas.",
+    "respuestaPolicial": "Las autoridades están revisando las imágenes de las cámaras de videoseguridad para identificar a los delincuentes y capturarlos.",
+    "testigos": "Varios testigos presenciaron el asalto, y las imágenes de las cámaras de seguridad fueron enviadas a la prensa.",
+    "impactoComunidad": "El asalto ha generado preocupación en la comunidad y en los comerciantes del centro de Ica.",
+    "imagenesVideos": [
+      "https://lalupa.pe/wp-content/uploads/2024/04/lalupa.pe-delincuentes-asaltan-un-agente-bancario-en-pleno-centro-de-ica-2.jpg.webp"
+    ],
+    "enlace": "https://lalupa.pe/ica/delincuentes-asaltan-un-agente-bancario-a-una-cuadra-de-la-plaza-de-armas-de-ica-83109/",
+    "urlVideo": "https://mp2023.nyc3.cdn.digitaloceanspaces.com/966819661104/2024/04/16/480/hrrr86f2mi2dyoaa.mp4",
+    "coordenadas": {
+      "latitud": -14.06551035366844,
+      "longitud": -75.72907578732828
+    }
+  },
+  {
+    "incidente": "asalto",
+    "tipoIncidente": "robo agravado en banda",
+    "nombreBanda": "Los Pepes de Ica",
+    "liderBanda": {
+      "nombre": "Bill Teodoro Garriazo Yupanqui",
+      "edad": 21
+    },
+    "detenidos": [
+      {
+        "nombre": "Vladimir Albino Aroni Llana",
+        "edad": 27,
+        "alias": "Albino"
+      },
+      {
+        "nombre": "José Mitchel Garriazo Espino",
+        "edad": 24,
+        "alias": "Michel"
+      },
+      {
+        "nombre": "Álvaro Enrique Kuroiwa Orellana",
+        "edad": 33,
+        "alias": "Quique"
+      },
+      {
+        "nombre": "Bill Teodoro Garriazo Yupanqui",
+        "edad": 21,
+        "alias": "Bill"
+      }
+    ],
+    "fechaOperacion": "2024-04-12",
+    "horaOperacion": "desde las 4:00 p.m.",
+    "descripcionOperacion": "La Policía Nacional del Perú (PNP) logró desbaratar la peligrosa banda denominada «Los Pepes de Ica», presuntos asaltantes de la tienda de Promart en marzo 2024. La detención sucedió tras un mes de fuerte investigación de los efectivos de Inteligencias de la División Criminalística (DIVINCRI).",
+    "modoOperacion": "tabajo de seguimiento e inteligencia operativa",
+    "ubicacionesAllanamientos": [
+      "Vivienda en Vista Alegre Lt 14, Parcona-Ica",
+      "Vivienda en la calle San Carlos Mz t, L10-b-Ica"
+    ],
+    "evidenciasEncontradas": [
+      "prendas de vestir",
+      "zapatillas",
+      "registros fílmicos"
+    ],
+    "presuntosDelitos": [
+      "robo agravado en banda",
+      "sicariato",
+      "extorsión",
+      "marcaje"
+    ],
+    "detallesDelitos": "Los sujetos son presuntamente responsables de robos agravados en banda, sicariato, extorsión, marcaje y otros.",
+    "medidasJudiciales": "Los detenidos están bajo detención preliminar mientras se continúa la investigación del caso.",
+    "imagenesVideos": [
+      "https://lalupa.pe/wp-content/uploads/2024/03/lalupa.pe-ica.webp",
+      "https://lalupa.pe/wp-content/uploads/2024/04/lalupa.pe-caen-los-pepes-de-ica-peligrosa-banda-que-asalto-la-tienda-de-promart-en-marzo.jpg.webp"
+    ],
+    "enlace": "https://lalupa.pe/ica/caen-los-pepes-de-ica-peligrosa-banda-que-asalto-la-tienda-de-promart-en-marzo-83060/",
+    "urlVideo": "https://mp2023.nyc3.cdn.digitaloceanspaces.com/966819661104/2024/04/13/480/pmkzukrhvwhddzhp.mp4",
+    "distrito": "Ica",
+    "coordenadas": [
+      {
+        "latitud": -14.057555280967623,
+        "longitud": -75.7218605286796
+      },
+      {
+        "latitud": -14.082947309866013,
+        "longitud": -75.72354015751523
+      }
+    ]
+  },
+  {
+    "incidente": "extorsión",
+    "tipoIncidente": "detención de policías presuntamente vinculados a banda criminal",
+    "nombreBanda": "Los Babys de Ica",
+    "detenidos": [
+      {
+        "nombre": "Richard Zárate Arroyo",
+        "cargo": "suboficial de tercera",
+        "comisaria": "Santiago de Chocorvos, Huancavelica"
+      },
+      {
+        "nombre": "Juan Alberto Espino Cabana",
+        "cargo": "suboficial de tercera",
+        "comisaria": "La Tinguiña, Ica"
+      },
+      {
+        "nombre": "Marcelo Calderón Fernández",
+        "antecedentes": [
+          "robo agravado con mano armada",
+          "fabricación y suministro de materiales peligrosos",
+          "ocho años de condena en el penal de Cachiche"
+        ]
+      }
+    ],
+    "ubicacion": "Centro poblado Huamanguilla, distrito Los Aquijes, provincia de Ica",
+    "distrito": "Los Aquijes",
+    "fechaIntervencion": "2024-03-13",
+    "horaIntervencion": "no especificada",
+    "descripcion": "Dos agentes de la Policía Nacional en servicio fueron detenidos por presuntamente pertenecer a la banda delictiva 'Los Babys de Ica'. A los efectivos se les acusa el presunto delito de extorsión contra empresarios del rubro de la construcción.",
+    "informacionAdicional": "La intervención se realizó luego de una llamada denunciando la presencia de los sujetos para exigir el pago de cupos a ingenieros y empresarios. Los detenidos se encuentran retenidos en la sede de la División de Criminalística de la PNP, a la espera de la decisión de la Fiscalía.",
+    "enlaceNoticia": "https://rpp.pe/peru/ica/ica-detienen-a-dos-policias-que-integrarian-banda-criminal-dedicada-a-la-extorsion-noticia-1540844",
+    "enlaceImagen": "https://e.rpp-noticias.io/xlarge/2024/03/13/253025_1552289.webp",
+    "coordenadas": {
+      "latitud": -14.082499892828427,
+      "longitud": -75.68322691351243
+    }
+  }
+]
