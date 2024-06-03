@@ -1,14 +1,20 @@
 import json
 from typing import List
-
-from models.Incidente import Incidente
+from models.Incidente import Incidente, CasosAnteriores, Coordenadas
 
 
 def cargar_datos(ruta: str) -> List[Incidente]:
     with open(ruta, "r", encoding="utf-8") as archivo:
         datos_json = json.load(archivo)
 
-    datos = [Incidente(**incidente) for incidente in datos_json]
+    datos = []
+    for incidente in datos_json:
+        incidente["casosAnteriores"] = [
+            CasosAnteriores(**caso) for caso in incidente["casosAnteriores"]
+        ]
+        incidente["coordenadas"] = Coordenadas(**incidente["coordenadas"])
+        datos.append(Incidente(**incidente))
+
     return datos
 
 

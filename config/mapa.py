@@ -1,8 +1,10 @@
-from typing import List
 import folium
-from folium.plugins import MarkerCluster
-import models
-from models.Incidente import Incidente
+import locale
+from typing import List
+from models.Incidente import Incidente, Coordenadas
+
+
+import models.Incidente
 
 
 def crear_mapa():
@@ -16,20 +18,19 @@ def crear_capa(nombre):
 
 
 def agregar_marcadores(mapa, capa, datos: List[Incidente]):
+    locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
     for incidente in datos:
         coordenadas_data = incidente.coordenadas
-        ubicacion = incidente.ubicacion
-        if isinstance(coordenadas_data, models.Incidente.Coordenadas):
+        if isinstance(coordenadas_data, Coordenadas):
             coordenadas = [coordenadas_data.latitud, coordenadas_data.longitud]
-            # Agrega más información al popup con HTML y CSS
             contenido_popup = f"""
                 <div style="color: red; font-size: 16px; font-weight: bold;">Descripción:</div>
                 <div style="color: black; font-size: 14px;">{incidente.descripcion}</div>
                 <div style="color: red; font-size: 16px; font-weight: bold;">Ubicación:</div>
-                <div style="color: black; font-size: 14px;">{ubicacion}</div>
-                <!-- Agrega más campos aquí -->
+                <div style="color: black; font-size: 14px;">{incidente.ubicacion}</div>
+                <div style="color: red; font-size: 16px; font-weight: bold;">Fecha:</div>
+                <div style="color: black; font-size: 14px;">{incidente.fecha}</div>
             """
-            # Limita la longitud del texto del tooltip
             descripcion_corta = (
                 (incidente.descripcion[:30] + "...")
                 if len(incidente.descripcion) > 30
@@ -44,7 +45,7 @@ def agregar_marcadores(mapa, capa, datos: List[Incidente]):
                     ),
                     max_width=250,
                 ),
-                tooltip=descripcion_corta,  # Agrega un tooltip
+                tooltip=descripcion_corta,
                 icon=folium.Icon(color="red", icon="info-sign"),
             ).add_to(capa)
         else:

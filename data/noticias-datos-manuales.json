@@ -2,39 +2,11 @@
   {
     "incidente": "robo",
     "tipoIncidente": "asalto a mano armada",
-    "victimas": [
-      {
-        "nombre": "desconocido",
-        "edad": 29,
-        "sexo": "Mujer",
-        "estadoSalud": "Estabilizada y en recuperación en el Hospital Regional de Ica"
-      }
-    ],
     "ubicacion": "Panamericana Sur, altura de la Posta Médica de Macacona",
     "distrito": "Subtanjalla",
-    "estado": "Mujer herida, PNP continua con las investigaciones",
     "fecha": "2024-04-18",
     "hora": "aproximadamente 14:00",
     "descripcion": "Una mujer de 29 años fue asaltada tras retirar 13 mil soles del Banco del Crédito del Perú (BCP) en el Centro Comercial Mega Plaza de Ica. Fue interceptada en la Panamericana Sur, altura de la Posta Médica de Macacona, distrito de Subtanjalla. La víctima recibió un impacto de bala en el pecho.",
-    "detallesAsaltantes": [
-      {
-        "nombre": "desconocido",
-        "edad": "desconocido",
-        "sexo": "Hombre",
-        "estadoSalud": "en fuga"
-      },
-      {
-        "nombre": "desconocido",
-        "edad": "desconocido",
-        "sexo": "Hombre",
-        "estadoSalud": "en fuga"
-      }
-    ],
-    "medioTransporte": "moto lineal",
-    "reaccionVictima": "La víctima mostró resistencia y fue herida de bala en el pecho.",
-    "testigos": "Varios transeúntes y la pareja de la víctima presenciaron el incidente.",
-    "medidasSeguridad": "El banco BCP y las autoridades locales están revisando los protocolos de seguridad en respuesta al aumento de los casos de marcaje.",
-    "imagenes": "Cámaras de seguridad del Centro Comercial Mega Plaza y del lugar del incidente están siendo revisadas por las autoridades.",
     "casosAnteriores": [
       {
         "fecha": "2024-04-06",
@@ -52,8 +24,6 @@
         "ubicacion": "Hospital Regional de Ica"
       }
     ],
-    "medidasPrecaucion": "Se recomienda a los clientes de bancos tomar precauciones adicionales y considerar utilizar servicios de escolta para grandes retiros de dinero.",
-    "enlace": "https://lalupa.pe/ica/ica-mujer-retiro-13-mil-soles-de-un-banco-de-mega-plaza-y-marcas-lo-alcanzaron-y-asaltaron-a-balazos-83213/",
     "coordenadas": {
       "latitud": -14.020542619123695,
       "longitud": -75.76173295376083
@@ -62,51 +32,11 @@
   {
     "incidente": "enfrentamiento entre bandas criminales",
     "tipoIncidente": "balacera por ajuste de cuentas",
-    "victimas": [
-      {
-        "nombre": "José Clemente Apesteguia Martínez",
-        "edad": 38,
-        "sexo": "Hombre",
-        "estadoSalud": "diagnóstico de carácter reservado"
-      },
-      {
-        "nombre": "Stefany Dayana Pecho Medina",
-        "edad": 30,
-        "sexo": "Mujer",
-        "estadoSalud": "herida por proyectil de arma de fuego en pierna izquierda"
-      },
-      {
-        "nombre": "Miguel Ángel Espino Misael",
-        "edad": 34,
-        "sexo": "Hombre",
-        "estadoSalud": "traumatismo abdominal abierto"
-      }
-    ],
     "ubicacion": "Esquina de las calles Unión y Junín, afueras del Poder Judicial, frente a la Plazuela Barranca",
     "distrito": "Ica",
-    "estado": "PNP continua con las investigaciones",
     "fecha": "2024-04-18",
     "hora": "alrededor de las 19:00",
     "descripcion": "Una balacera se reportó en pleno centro de Ica, afueras del Poder Judicial, frente a la Plazuela Barranca. Fue un enfrentamiento entre bandas criminales, presuntamente por ajuste de cuentas, dejando tres heridos de bala. La PNP está investigando el caso.",
-    "detallesAsaltantes": [
-      {
-        "nombre": "desconocido",
-        "edad": "desconocido",
-        "sexo": "Hombre",
-        "estadoSalud": "en fuga"
-      },
-      {
-        "nombre": "desconocido",
-        "edad": "desconocido",
-        "sexo": "Hombre",
-        "estadoSalud": "en fuga"
-      }
-    ],
-    "medioTransporte": "motocicleta",
-    "reaccionVictima": "Los heridos fueron evacuados para recibir atención médica en un hospital de Ica.",
-    "testigos": "Varios transeúntes y personas en la zona presenciaron el incidente.",
-    "medidasSeguridad": "La PNP está reforzando la seguridad en la zona y realizando operativos para capturar a los responsables.",
-    "imagenes": "Cámaras de seguridad en la zona están siendo revisadas por las autoridades.",
     "casosAnteriores": [
       {
         "fecha": "2024-04-16",
@@ -114,8 +44,6 @@
         "ubicacion": "Centro Comercial Promart, Ica"
       }
     ],
-    "medidasPrecaucion": "Se recomienda a los ciudadanos evitar la zona en horarios nocturnos y reportar cualquier actividad sospechosa a las autoridades.",
-    "enlace": "https://lalupa.pe/ica/bandas-criminales-se-agarraron-a-balazos-en-el-centro-de-ica-y-dejan-tres-heridos-83208/",
     "coordenadas": {
       "latitud": -14.066763876544703,
       "longitud": -75.72603554114863
@@ -124,32 +52,11 @@
   {
     "incidente": "secuestro",
     "tipoIncidente": "tentativa de secuestro de menor",
-    "victimas": [
-      {
-        "nombre": "T.G.T.",
-        "edad": 13,
-        "sexo": "Mujer",
-        "estadoSalud": "ilesa"
-      }
-    ],
-    "detallesAsaltantes": [
-      {
-        "nombre": "Augusto Monterrey Martínez",
-        "edad": 36,
-        "sexo": "Hombre",
-        "estadoSalud": "bajo detención e investigación preliminar"
-      }
-    ],
     "ubicacion": "Asentamiento Humano Pilar Nores de García, distrito de Subtanjalla, Ica",
     "distrito": "Subtanjalla",
     "hora": "5:30 a.m.",
     "fecha": "2024-04-18",
-    "estado": "PNP investiga el caso",
-    "medioTransporte": "automóvil",
     "descripcion": "Un grupo de vecinos lograron capturar a uno de tres presuntos secuestradores cuya víctima era una niña de 13 años de edad. Los padres de familia indignados casi linchan al sujeto, sin embargo fue entregado a la Policía Nacional del Perú (PNP).",
-    "reaccionVictima": "Los vecinos capturaron a uno de los presuntos secuestradores y casi lo linchan.",
-    "medidasSeguridad": "La PNP está reforzando la vigilancia en la zona para prevenir futuros incidentes.",
-    "testigos": "Varios vecinos del Asentamiento Humano Pilar Nores de García presenciaron el incidente.",
     "casosAnteriores": [
       {
         "fecha": "2024-04-10",
@@ -157,9 +64,6 @@
         "ubicacion": "Asentamiento Humano Pilar Nores de García"
       }
     ],
-    "medidasPrecaucion": "Se recomienda a los padres de familia estar alerta y supervisar a sus hijos en todo momento.",
-    "imagenes": "Videos de seguridad de la zona están siendo revisados por las autoridades.",
-    "enlace": "https://lalupa.pe/ica/ica-vecinos-capturan-a-uno-de-cuatro-sujetos-cuando-secuestraban-a-una-nina-de-13-anos-83191/",
     "coordenadas": {
       "latitud": -14.019689216851297,
       "longitud": -75.75466271041263
