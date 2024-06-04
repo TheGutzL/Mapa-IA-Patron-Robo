@@ -68,5 +68,305 @@
       "latitud": -14.019689216851297,
       "longitud": -75.75466271041263
     }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "asalto en tienda",
+    "ubicacion": "Av. San Martín, Ica",
+    "distrito": "Ica",
+    "fecha": "2024-05-02",
+    "hora": "16:00",
+    "descripcion": "Un hombre armado ingresó a una tienda de electrodomésticos y robó 15 mil soles.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-15",
+        "detalle": "Asalto en joyería en el mismo distrito.",
+        "ubicacion": "Plaza de Armas de Ica"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0665,
+      "longitud": -75.725
+    }
+  },
+  {
+    "incidente": "homicidio",
+    "tipoIncidente": "disputa entre vecinos",
+    "ubicacion": "Urb. San Joaquín",
+    "distrito": "Ica",
+    "fecha": "2024-04-30",
+    "hora": "21:00",
+    "descripcion": "Un hombre fue asesinado durante una pelea vecinal.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-03-25",
+        "detalle": "Disputa similar en la misma urbanización.",
+        "ubicacion": "Urb. San Joaquín"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.071,
+      "longitud": -75.729
+    }
+  },
+  {
+    "incidente": "secuestro",
+    "tipoIncidente": "secuestro extorsivo",
+    "ubicacion": "Av. Los Maestros",
+    "distrito": "La Tinguiña",
+    "fecha": "2024-04-29",
+    "hora": "23:00",
+    "descripcion": "Un empresario fue secuestrado y liberado tras el pago de un rescate.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-10",
+        "detalle": "Secuestro de un comerciante en la misma avenida.",
+        "ubicacion": "Av. Los Maestros"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0595,
+      "longitud": -75.712
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en cajero automático",
+    "ubicacion": "Centro Comercial El Quinde",
+    "distrito": "Ica",
+    "fecha": "2024-05-01",
+    "hora": "12:30",
+    "descripcion": "Un grupo de delincuentes robó 20 mil soles de un cajero automático.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-22",
+        "detalle": "Robo en un banco dentro del mismo centro comercial.",
+        "ubicacion": "Centro Comercial El Quinde"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0715,
+      "longitud": -75.732
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo a vivienda",
+    "ubicacion": "Urb. El Huarango",
+    "distrito": "Ica",
+    "fecha": "2024-05-05",
+    "hora": "02:00",
+    "descripcion": "Una vivienda fue asaltada y los ladrones se llevaron objetos de valor.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-18",
+        "detalle": "Robo similar en una casa cercana.",
+        "ubicacion": "Urb. El Huarango"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.076,
+      "longitud": -75.735
+    }
+  },
+  {
+    "incidente": "secuestro",
+    "tipoIncidente": "secuestro de comerciante",
+    "ubicacion": "Mercado Modelo de Ica",
+    "distrito": "Ica",
+    "fecha": "2024-04-20",
+    "hora": "18:00",
+    "descripcion": "Un comerciante fue secuestrado al salir del mercado.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-02",
+        "detalle": "Secuestro de otro comerciante en la misma zona.",
+        "ubicacion": "Mercado Modelo de Ica"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.064,
+      "longitud": -75.72
+    }
+  },
+  {
+    "incidente": "enfrentamiento entre bandas criminales",
+    "tipoIncidente": "balacera por territorio",
+    "ubicacion": "Urb. San Isidro",
+    "distrito": "Ica",
+    "fecha": "2024-04-19",
+    "hora": "22:00",
+    "descripcion": "Dos bandas criminales se enfrentaron a balazos dejando varios heridos.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-03-30",
+        "detalle": "Otro enfrentamiento similar en la misma urbanización.",
+        "ubicacion": "Urb. San Isidro"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0695,
+      "longitud": -75.7265
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "asalto a mano armada",
+    "ubicacion": "Calle La Mar",
+    "distrito": "Ica",
+    "fecha": "2024-04-21",
+    "hora": "15:00",
+    "descripcion": "Una mujer fue asaltada tras retirar dinero de un banco cercano.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-05",
+        "detalle": "Asalto similar en la misma calle.",
+        "ubicacion": "Calle La Mar"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.067,
+      "longitud": -75.722
+    }
+  },
+  {
+    "incidente": "secuestro",
+    "tipoIncidente": "tentativa de secuestro de adulto",
+    "ubicacion": "Urb. Las Casuarinas",
+    "distrito": "Ica",
+    "fecha": "2024-04-17",
+    "hora": "20:00",
+    "descripcion": "Un hombre logró escapar de un intento de secuestro.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-03-29",
+        "detalle": "Secuestro exitoso en la misma urbanización.",
+        "ubicacion": "Urb. Las Casuarinas"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.073,
+      "longitud": -75.731
+    }
+  },
+  {
+    "incidente": "homicidio",
+    "tipoIncidente": "ajuste de cuentas",
+    "ubicacion": "Urb. San José",
+    "distrito": "Ica",
+    "fecha": "2024-04-15",
+    "hora": "22:30",
+    "descripcion": "Un hombre fue asesinado en un aparente ajuste de cuentas.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-03-10",
+        "detalle": "Homicidio similar en la misma urbanización.",
+        "ubicacion": "Urb. San José"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0655,
+      "longitud": -75.73
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo a transeúnte",
+    "ubicacion": "Av. Cutervo",
+    "distrito": "Ica",
+    "fecha": "2024-04-28",
+    "hora": "18:30",
+    "descripcion": "Un hombre fue asaltado mientras caminaba por la avenida.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-10",
+        "detalle": "Robo similar en la misma avenida.",
+        "ubicacion": "Av. Cutervo"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0675,
+      "longitud": -75.7235
+    }
+  },
+  {
+    "incidente": "enfrentamiento entre bandas criminales",
+    "tipoIncidente": "balacera por control de zona",
+    "ubicacion": "Urb. Sol de Ica",
+    "distrito": "Ica",
+    "fecha": "2024-04-14",
+    "hora": "23:00",
+    "descripcion": "Dos bandas se enfrentaron por el control de la zona, dejando varios heridos.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-03-25",
+        "detalle": "Otro enfrentamiento en la misma urbanización.",
+        "ubicacion": "Urb. Sol de Ica"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.074,
+      "longitud": -75.733
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "asalto a mano armada",
+    "ubicacion": "Plaza de Armas de Ica",
+    "distrito": "Ica",
+    "fecha": "2024-05-03",
+    "hora": "14:00",
+    "descripcion": "Un hombre fue asaltado en pleno centro de la ciudad.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-18",
+        "detalle": "Robo similar en la misma plaza.",
+        "ubicacion": "Plaza de Armas de Ica"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.065,
+      "longitud": -75.7225
+    }
+  },
+  {
+    "incidente": "secuestro",
+    "tipoIncidente": "secuestro de empresario",
+    "ubicacion": "Av. Grau",
+    "distrito": "Ica",
+    "fecha": "2024-04-25",
+    "hora": "21:00",
+    "descripcion": "Un empresario fue secuestrado y liberado tras el pago de un rescate.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-03-28",
+        "detalle": "Secuestro de otro empresario en la misma avenida.",
+        "ubicacion": "Av. Grau"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.07,
+      "longitud": -75.724
+    }
+  },
+  {
+    "incidente": "homicidio",
+    "tipoIncidente": "ajuste de cuentas",
+    "ubicacion": "Av. Cutervo",
+    "distrito": "Ica",
+    "fecha": "2024-04-12",
+    "hora": "23:30",
+    "descripcion": "Un hombre fue asesinado en un ajuste de cuentas.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-03-15",
+        "detalle": "Homicidio similar en la misma avenida.",
+        "ubicacion": "Av. Cutervo"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.067,
+      "longitud": -75.723
+    }
   }
 ]
