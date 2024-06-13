@@ -2,6 +2,7 @@ from typing import List
 from models.Incidente import Incidente, Coordenadas
 from folium.plugins import HeatMap
 from folium import Map
+from folium.features import GeoJsonTooltip
 import folium
 import locale
 import models.Incidente
@@ -64,7 +65,15 @@ def agregar_mapa_calor(mapa, datos: List[Incidente], capa):
     
 
 def agregar_geojson(capa, geojson_data, style_function):
-    folium.GeoJson(geojson_data, style_function=style_function).add_to(capa)
+    folium.GeoJson(
+        geojson_data, 
+        style_function=style_function, 
+        tooltip=GeoJsonTooltip(
+            fields=['nombdist'],
+            aliases=['Distrito'],
+            localize=True
+        )
+    ).add_to(capa)
 
 
 def agregar_control_capas(mapa):
