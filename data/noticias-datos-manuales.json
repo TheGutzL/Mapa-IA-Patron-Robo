@@ -30,46 +30,6 @@
     }
   },
   {
-    "incidente": "enfrentamiento entre bandas criminales",
-    "tipoIncidente": "balacera por ajuste de cuentas",
-    "ubicacion": "Esquina de las calles Unión y Junín, afueras del Poder Judicial, frente a la Plazuela Barranca",
-    "distrito": "Ica",
-    "fecha": "2024-04-18",
-    "hora": "19:00",
-    "descripcion": "Una balacera se reportó en pleno centro de Ica, afueras del Poder Judicial, frente a la Plazuela Barranca. Fue un enfrentamiento entre bandas criminales, presuntamente por ajuste de cuentas, dejando tres heridos de bala. La PNP está investigando el caso.",
-    "casosAnteriores": [
-      {
-        "fecha": "2024-04-16",
-        "detalle": "Integrantes de la banda 'Los pepes de Ica' asaltaron a mano armada el Centro Comercial Promart.",
-        "ubicacion": "Centro Comercial Promart, Ica"
-      }
-    ],
-    "coordenadas": {
-      "latitud": -14.066763876544703,
-      "longitud": -75.72603554114863
-    }
-  },
-  {
-    "incidente": "secuestro",
-    "tipoIncidente": "tentativa de secuestro de menor",
-    "ubicacion": "Asentamiento Humano Pilar Nores de García, distrito de Subtanjalla, Ica",
-    "distrito": "Subtanjalla",
-    "hora": "05:30",
-    "fecha": "2024-04-18",
-    "descripcion": "Un grupo de vecinos lograron capturar a uno de tres presuntos secuestradores cuya víctima era una niña de 13 años de edad. Los padres de familia indignados casi linchan al sujeto, sin embargo fue entregado a la Policía Nacional del Perú (PNP).",
-    "casosAnteriores": [
-      {
-        "fecha": "2024-04-10",
-        "detalle": "Niño de 8 años secuestrado en el distrito de Subtanjalla.",
-        "ubicacion": "Asentamiento Humano Pilar Nores de García"
-      }
-    ],
-    "coordenadas": {
-      "latitud": -14.019689216851297,
-      "longitud": -75.75466271041263
-    }
-  },
-  {
     "incidente": "robo",
     "tipoIncidente": "asalto en tienda",
     "ubicacion": "Av. San Martín, Ica",
@@ -87,26 +47,6 @@
     "coordenadas": {
       "latitud": -14.0665,
       "longitud": -75.725
-    }
-  },
-  {
-    "incidente": "homicidio",
-    "tipoIncidente": "disputa entre vecinos",
-    "ubicacion": "Urb. San Joaquín",
-    "distrito": "Ica",
-    "fecha": "2024-04-30",
-    "hora": "21:00",
-    "descripcion": "Un hombre fue asesinado durante una pelea vecinal.",
-    "casosAnteriores": [
-      {
-        "fecha": "2024-03-25",
-        "detalle": "Disputa similar en la misma urbanización.",
-        "ubicacion": "Urb. San Joaquín"
-      }
-    ],
-    "coordenadas": {
-      "latitud": -14.071,
-      "longitud": -75.729
     }
   },
   {
@@ -190,26 +130,6 @@
     }
   },
   {
-    "incidente": "enfrentamiento entre bandas criminales",
-    "tipoIncidente": "balacera por territorio",
-    "ubicacion": "Urb. San Isidro",
-    "distrito": "Ica",
-    "fecha": "2024-04-19",
-    "hora": "22:00",
-    "descripcion": "Dos bandas criminales se enfrentaron a balazos dejando varios heridos.",
-    "casosAnteriores": [
-      {
-        "fecha": "2024-03-30",
-        "detalle": "Otro enfrentamiento similar en la misma urbanización.",
-        "ubicacion": "Urb. San Isidro"
-      }
-    ],
-    "coordenadas": {
-      "latitud": -14.0695,
-      "longitud": -75.7265
-    }
-  },
-  {
     "incidente": "robo",
     "tipoIncidente": "asalto a mano armada",
     "ubicacion": "Calle La Mar",
@@ -250,26 +170,6 @@
     }
   },
   {
-    "incidente": "homicidio",
-    "tipoIncidente": "ajuste de cuentas",
-    "ubicacion": "Urb. San José",
-    "distrito": "Ica",
-    "fecha": "2024-04-15",
-    "hora": "22:30",
-    "descripcion": "Un hombre fue asesinado en un aparente ajuste de cuentas.",
-    "casosAnteriores": [
-      {
-        "fecha": "2024-03-10",
-        "detalle": "Homicidio similar en la misma urbanización.",
-        "ubicacion": "Urb. San José"
-      }
-    ],
-    "coordenadas": {
-      "latitud": -14.0655,
-      "longitud": -75.73
-    }
-  },
-  {
     "incidente": "robo",
     "tipoIncidente": "robo a transeúnte",
     "ubicacion": "Av. Cutervo",
@@ -290,26 +190,6 @@
     }
   },
   {
-    "incidente": "enfrentamiento entre bandas criminales",
-    "tipoIncidente": "balacera por control de zona",
-    "ubicacion": "Urb. Sol de Ica",
-    "distrito": "Ica",
-    "fecha": "2024-04-14",
-    "hora": "23:00",
-    "descripcion": "Dos bandas se enfrentaron por el control de la zona, dejando varios heridos.",
-    "casosAnteriores": [
-      {
-        "fecha": "2024-03-25",
-        "detalle": "Otro enfrentamiento en la misma urbanización.",
-        "ubicacion": "Urb. Sol de Ica"
-      }
-    ],
-    "coordenadas": {
-      "latitud": -14.074,
-      "longitud": -75.733
-    }
-  },
-  {
     "incidente": "robo",
     "tipoIncidente": "asalto a mano armada",
     "ubicacion": "Plaza de Armas de Ica",
@@ -327,46 +207,6 @@
     "coordenadas": {
       "latitud": -14.065,
       "longitud": -75.7225
-    }
-  },
-  {
-    "incidente": "secuestro",
-    "tipoIncidente": "secuestro de empresario",
-    "ubicacion": "Av. Grau",
-    "distrito": "Ica",
-    "fecha": "2024-04-25",
-    "hora": "21:00",
-    "descripcion": "Un empresario fue secuestrado y liberado tras el pago de un rescate.",
-    "casosAnteriores": [
-      {
-        "fecha": "2024-03-28",
-        "detalle": "Secuestro de otro empresario en la misma avenida.",
-        "ubicacion": "Av. Grau"
-      }
-    ],
-    "coordenadas": {
-      "latitud": -14.07,
-      "longitud": -75.724
-    }
-  },
-  {
-    "incidente": "homicidio",
-    "tipoIncidente": "ajuste de cuentas",
-    "ubicacion": "Av. Cutervo",
-    "distrito": "Ica",
-    "fecha": "2024-04-12",
-    "hora": "23:30",
-    "descripcion": "Un hombre fue asesinado en un ajuste de cuentas.",
-    "casosAnteriores": [
-      {
-        "fecha": "2024-03-15",
-        "detalle": "Homicidio similar en la misma avenida.",
-        "ubicacion": "Av. Cutervo"
-      }
-    ],
-    "coordenadas": {
-      "latitud": -14.067,
-      "longitud": -75.723
     }
   }
 ]

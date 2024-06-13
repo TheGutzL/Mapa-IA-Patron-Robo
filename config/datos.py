@@ -1,7 +1,7 @@
 import json
 from typing import List
 from models.Incidente import Incidente, CasosAnteriores, Coordenadas
-
+import pandas as pd
 
 def cargar_datos(ruta: str) -> List[Incidente]:
     with open(ruta, "r", encoding="utf-8") as archivo:
@@ -34,3 +34,18 @@ def filtrar_geojson(geojson_data, distritos):
             filtered_features.append(feature)
     geojson_data["features"] = filtered_features
     return geojson_data
+
+def contar_robos_por_distrito(datos: List[Incidente]) -> pd.Series:
+    robos = [incidente for incidente in datos if incidente.incidente == 'robo']
+    robos_por_distrito = pd.Series([robo.distrito for robo in robos]).value_counts()
+    return robos_por_distrito
+
+def calcular_porcentaje_robos(robos_por_distritos: pd.Series) -> pd.DataFrame:
+    total_robos = robos_por_distritos.sum()
+    porcentaje_robos = (robos_por_distritos / total_robos) * 100
+    df_porcentaje_robos = pd.DataFrame({'Distrito': porcentaje_robos.index, 'Porcentaje de robos': porcentaje_robos.values})
+    return df_porcentaje_robos
+
+def guardar_porcentaje_robos_csv(df_porcentaje_robos: pd.DataFrame, ruta: str):
+    df_porcentaje_robos.to_csv(ruta, index=False)
+    

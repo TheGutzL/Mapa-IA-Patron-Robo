@@ -1,10 +1,11 @@
-import folium
-import locale
 from typing import List
 from models.Incidente import Incidente, Coordenadas
-
-
+from folium.plugins import HeatMap
+from folium import Map
+import folium
+import locale
 import models.Incidente
+import pandas as pd
 
 
 def crear_mapa():
@@ -54,6 +55,13 @@ def agregar_marcadores(mapa, capa, datos: List[Incidente]):
             )
     mapa.add_child(capa)
 
+def agregar_mapa_calor(mapa, datos: List[Incidente], capa):
+    heat_data = [[incidente.coordenadas.latitud, incidente.coordenadas.longitud] for incidente in datos if isinstance(incidente.coordenadas, Coordenadas)]
+    
+    HeatMap(heat_data).add_to(capa)
+    
+    mapa.add_child(capa)
+    
 
 def agregar_geojson(capa, geojson_data, style_function):
     folium.GeoJson(geojson_data, style_function=style_function).add_to(capa)
@@ -61,3 +69,6 @@ def agregar_geojson(capa, geojson_data, style_function):
 
 def agregar_control_capas(mapa):
     folium.LayerControl().add_to(mapa)
+    
+
+
