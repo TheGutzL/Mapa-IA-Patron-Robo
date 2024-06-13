@@ -64,7 +64,14 @@ def agregar_mapa_calor(mapa, datos: List[Incidente], capa):
     mapa.add_child(capa)
     
 
-def agregar_geojson(capa, geojson_data, style_function):
+def agregar_geojson(capa, geojson_data):
+    def style_function(feature):
+        return {
+            'fillOpacity': 0,  # Sin relleno
+            'weight': 2,
+            'color': 'black',  # Líneas negras
+        }
+
     folium.GeoJson(
         geojson_data, 
         style_function=style_function, 
@@ -75,6 +82,16 @@ def agregar_geojson(capa, geojson_data, style_function):
         )
     ).add_to(capa)
 
+def agregar_color_seguridad(capa, geojson_data, style_function):
+    folium.GeoJson(
+        geojson_data, 
+        style_function=style_function, 
+        tooltip=GeoJsonTooltip(
+            fields=['nombdist'],
+            aliases=['Distrito'],
+            localize=True
+        )
+    ).add_to(capa)
 
 def agregar_control_capas(mapa):
     folium.LayerControl().add_to(mapa)
