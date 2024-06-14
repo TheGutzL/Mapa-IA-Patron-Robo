@@ -394,5 +394,39 @@
       "latitud": -14.0737,
       "longitud": -75.7298
     }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "asalto a mano armada",
+    "ubicacion": "Calle La Tinguiña",
+    "distrito": "La Tinguiña",
+    "fecha": "2024-05-08",
+    "hora": "12:00",
+    "descripcion": "Un hombre fue asaltado tras retirar dinero de un cajero automático.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-25",
+        "detalle": "Asalto similar en la misma calle.",
+        "ubicacion": "Calle La Tinguiña"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0703,
+      "longitud": -75.7204
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo a vivienda",
+    "ubicacion": "Calle San Martín",
+    "distrito": "Subtanjalla",
+    "fecha": "2024-05-07",
+    "hora": "02:30",
+    "descripcion": "Una casa fue asaltada y se llevaron objetos de valor y dinero.",
+    "casosAnteriores": [],
+    "coordenadas": {
+      "latitud": -14.0182,
+      "longitud": -75.7273
+    }
   }
 ]
