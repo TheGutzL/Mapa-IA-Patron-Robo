@@ -5,6 +5,7 @@ from folium import Map
 from folium.features import GeoJsonTooltip
 from datetime import datetime
 from config.prediccion import entrenar_modelo, hacer_predicciones
+from folium.plugins import GroupedLayerControl
 import folium
 import locale
 import models.Incidente
@@ -19,9 +20,12 @@ def crear_capa(nombre: str, mostrar: bool):
     capa = folium.FeatureGroup(name=nombre, show=mostrar)
     return capa
 
-
-def agregar_marcadores(mapa, capa, datos: List[Incidente], fecha_inicio=None, fecha_fin=None):
+def agregar_marcadores(mapa, datos: List[Incidente], fecha_inicio=None, fecha_fin=None):
     locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
+    
+    # Crear un diccionario para las subcapas
+    subcapas = {}
+
     for incidente in datos:
         
         fecha_incidente = datetime.strptime(incidente.fecha, "%Y-%m-%d").date()
@@ -45,6 +49,11 @@ def agregar_marcadores(mapa, capa, datos: List[Incidente], fecha_inicio=None, fe
                 if len(incidente.descripcion) > 30
                 else incidente.descripcion
             )
+            
+            # Si la subcapa para este tipo de incidente no existe, crearla
+            if incidente.incidente not in subcapas:
+                subcapas[incidente.incidente] = folium.FeatureGroup(name=incidente.incidente)
+
             folium.Marker(
                 location=coordenadas,
                 popup=folium.Popup(
@@ -56,12 +65,24 @@ def agregar_marcadores(mapa, capa, datos: List[Incidente], fecha_inicio=None, fe
                 ),
                 tooltip=descripcion_corta,
                 icon=folium.Icon(color="red", icon="info-sign"),
-            ).add_to(capa)
+            ).add_to(subcapas[incidente.incidente])  # Añadir el marcador a la subcapa correspondiente
         else:
             print(
                 f"Formato de coordenadas no reconocido para el incidente: {incidente}"
             )
-    mapa.add_child(capa)
+
+    # Añadir todas las subcapas al mapa
+    for subcapa in subcapas.values():
+        mapa.add_child(subcapa)
+
+    # Crear un diccionario para el control de capas agrupadas
+    grouped_layer_control = {
+        'Tipo de Robo': list(subcapas.values())
+    }
+
+    # Añadir el control de capas agrupadas al mapa
+    GroupedLayerControl(grouped_layer_control).add_to(mapa)
+    
 
 def agregar_mapa_calor(mapa, datos: List[Incidente], capa):
     heat_data = [[incidente.coordenadas.latitud, incidente.coordenadas.longitud] for incidente in datos if isinstance(incidente.coordenadas, Coordenadas)]

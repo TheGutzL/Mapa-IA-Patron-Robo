@@ -1,6 +1,6 @@
 [
   {
-    "incidente": "robo",
+    "incidente": "asalto",
     "tipoIncidente": "asalto a mano armada",
     "ubicacion": "Panamericana Sur, altura de la Posta Médica de Macacona",
     "distrito": "Subtanjalla",
@@ -30,7 +30,7 @@
     }
   },
   {
-    "incidente": "robo",
+    "incidente": "asalto",
     "tipoIncidente": "asalto en tienda",
     "ubicacion": "Av. San Martín, Ica",
     "distrito": "Ica",
@@ -164,7 +164,7 @@
     }
   },
   {
-    "incidente": "robo",
+    "incidente": "asalto",
     "tipoIncidente": "asalto a mano armada",
     "ubicacion": "Calle La Tinguiña",
     "distrito": "Ica",
@@ -201,26 +201,6 @@
     "coordenadas": {
       "latitud": -14.068,
       "longitud": -75.7258
-    }
-  },
-  {
-    "incidente": "robo",
-    "tipoIncidente": "asalto a mano armada",
-    "ubicacion": "Calle Pisco",
-    "distrito": "Pisco",
-    "fecha": "2024-05-10",
-    "hora": "13:00",
-    "descripcion": "Una pareja fue asaltada tras salir de un banco.",
-    "casosAnteriores": [
-      {
-        "fecha": "2024-04-20",
-        "detalle": "Asalto similar en la misma calle.",
-        "ubicacion": "Calle Pisco"
-      }
-    ],
-    "coordenadas": {
-      "latitud": -13.7084,
-      "longitud": -76.2032
     }
   },
   {
