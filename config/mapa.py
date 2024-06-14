@@ -4,11 +4,11 @@ from folium.plugins import HeatMap
 from folium import Map
 from folium.features import GeoJsonTooltip
 from datetime import datetime
+from config.prediccion import entrenar_modelo, hacer_predicciones
 import folium
 import locale
 import models.Incidente
 import pandas as pd
-
 
 def crear_mapa():
     mapa = folium.Map(location=[-14.0946, -75.7139], zoom_start=10)
@@ -99,6 +99,15 @@ def agregar_color_seguridad(capa, geojson_data, style_function):
             localize=True
         )
     ).add_to(capa)
+    
+def agregar_predicciones(mapa, capa, predicciones):
+    for lat, lon in predicciones:
+        folium.Marker(
+            location=[lat, lon],
+            popup=f"Posible robo futuro: {lat}, {lon}",
+            icon=folium.Icon(color="blue", icon="info-sign"),
+        ).add_to(capa)
+    mapa.add_child(capa)
 
 def agregar_control_capas(mapa):
     folium.LayerControl().add_to(mapa)

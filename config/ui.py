@@ -10,7 +10,7 @@ def create_date_picker(description):
     return date_picker
 
 def create_button(start_date_picker, end_date_picker, mapa, capa_marcadores, datos_incidentes):
-    button = widgets.Button(description="Filtrar por fecha")
+    button = widgets.Button(description="Filtrar Fechas")
     
     def on_button_clicked(b):
         fecha_inicio = start_date_picker.value
