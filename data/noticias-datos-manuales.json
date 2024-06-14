@@ -50,26 +50,6 @@
     }
   },
   {
-    "incidente": "secuestro",
-    "tipoIncidente": "secuestro extorsivo",
-    "ubicacion": "Av. Los Maestros",
-    "distrito": "La Tinguiña",
-    "fecha": "2024-04-29",
-    "hora": "23:00",
-    "descripcion": "Un empresario fue secuestrado y liberado tras el pago de un rescate.",
-    "casosAnteriores": [
-      {
-        "fecha": "2024-04-10",
-        "detalle": "Secuestro de un comerciante en la misma avenida.",
-        "ubicacion": "Av. Los Maestros"
-      }
-    ],
-    "coordenadas": {
-      "latitud": -14.0595,
-      "longitud": -75.712
-    }
-  },
-  {
     "incidente": "robo",
     "tipoIncidente": "robo en cajero automático",
     "ubicacion": "Centro Comercial El Quinde",
@@ -110,26 +90,6 @@
     }
   },
   {
-    "incidente": "secuestro",
-    "tipoIncidente": "secuestro de comerciante",
-    "ubicacion": "Mercado Modelo de Ica",
-    "distrito": "Ica",
-    "fecha": "2024-04-20",
-    "hora": "18:00",
-    "descripcion": "Un comerciante fue secuestrado al salir del mercado.",
-    "casosAnteriores": [
-      {
-        "fecha": "2024-04-02",
-        "detalle": "Secuestro de otro comerciante en la misma zona.",
-        "ubicacion": "Mercado Modelo de Ica"
-      }
-    ],
-    "coordenadas": {
-      "latitud": -14.064,
-      "longitud": -75.72
-    }
-  },
-  {
     "incidente": "robo",
     "tipoIncidente": "asalto a mano armada",
     "ubicacion": "Calle La Mar",
@@ -147,26 +107,6 @@
     "coordenadas": {
       "latitud": -14.067,
       "longitud": -75.722
-    }
-  },
-  {
-    "incidente": "secuestro",
-    "tipoIncidente": "tentativa de secuestro de adulto",
-    "ubicacion": "Urb. Las Casuarinas",
-    "distrito": "Ica",
-    "fecha": "2024-04-17",
-    "hora": "20:00",
-    "descripcion": "Un hombre logró escapar de un intento de secuestro.",
-    "casosAnteriores": [
-      {
-        "fecha": "2024-03-29",
-        "detalle": "Secuestro exitoso en la misma urbanización.",
-        "ubicacion": "Urb. Las Casuarinas"
-      }
-    ],
-    "coordenadas": {
-      "latitud": -14.073,
-      "longitud": -75.731
     }
   },
   {

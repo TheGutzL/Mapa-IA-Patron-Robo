@@ -3,6 +3,7 @@ from models.Incidente import Incidente, Coordenadas
 from folium.plugins import HeatMap
 from folium import Map
 from folium.features import GeoJsonTooltip
+from datetime import datetime
 import folium
 import locale
 import models.Incidente
@@ -14,14 +15,20 @@ def crear_mapa():
     return mapa
 
 
-def crear_capa(nombre):
-    capa = folium.FeatureGroup(name=nombre)
+def crear_capa(nombre: str, mostrar: bool):
+    capa = folium.FeatureGroup(name=nombre, show=mostrar)
     return capa
 
 
-def agregar_marcadores(mapa, capa, datos: List[Incidente]):
+def agregar_marcadores(mapa, capa, datos: List[Incidente], fecha_inicio=None, fecha_fin=None):
     locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
     for incidente in datos:
+        
+        fecha_incidente = datetime.strptime(incidente.fecha, "%Y-%m-%d").date()
+        
+        if fecha_inicio is not None and fecha_fin is not None and not fecha_inicio <= fecha_incidente <= fecha_fin:
+            continue
+        
         coordenadas_data = incidente.coordenadas
         if isinstance(coordenadas_data, Coordenadas):
             coordenadas = [coordenadas_data.latitud, coordenadas_data.longitud]
