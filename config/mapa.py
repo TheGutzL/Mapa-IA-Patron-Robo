@@ -20,12 +20,8 @@ def crear_capa(nombre: str, mostrar: bool):
     capa = folium.FeatureGroup(name=nombre, show=mostrar)
     return capa
 
-def agregar_marcadores(mapa, datos: List[Incidente], fecha_inicio=None, fecha_fin=None):
+def agregar_marcadores(mapa, capa, datos: List[Incidente], fecha_inicio=None, fecha_fin=None):
     locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
-    
-    # Crear un diccionario para las subcapas
-    subcapas = {}
-
     for incidente in datos:
         
         fecha_incidente = datetime.strptime(incidente.fecha, "%Y-%m-%d").date()
@@ -39,8 +35,6 @@ def agregar_marcadores(mapa, datos: List[Incidente], fecha_inicio=None, fecha_fi
             contenido_popup = f"""
                 <div style="color: red; font-size: 16px; font-weight: bold;">Descripción:</div>
                 <div style="color: black; font-size: 14px;">{incidente.descripcion}</div>
-                <div style="color: red; font-size: 16px; font-weight: bold;">Distrito:</div>
-                <div style="color: black; font-size: 14px;">{incidente.distrito}</div>
                 <div style="color: red; font-size: 16px; font-weight: bold;">Ubicación:</div>
                 <div style="color: black; font-size: 14px;">{incidente.ubicacion}</div>
                 <div style="color: red; font-size: 16px; font-weight: bold;">Fecha:</div>
@@ -51,11 +45,6 @@ def agregar_marcadores(mapa, datos: List[Incidente], fecha_inicio=None, fecha_fi
                 if len(incidente.descripcion) > 30
                 else incidente.descripcion
             )
-            
-            # Si la subcapa para este tipo de incidente no existe, crearla
-            if incidente.incidente not in subcapas:
-                subcapas[incidente.incidente] = folium.FeatureGroup(name=incidente.incidente)
-
             folium.Marker(
                 location=coordenadas,
                 popup=folium.Popup(
@@ -67,24 +56,12 @@ def agregar_marcadores(mapa, datos: List[Incidente], fecha_inicio=None, fecha_fi
                 ),
                 tooltip=descripcion_corta,
                 icon=folium.Icon(color="red", icon="info-sign"),
-            ).add_to(subcapas[incidente.incidente])  # Añadir el marcador a la subcapa correspondiente
+            ).add_to(capa)
         else:
             print(
                 f"Formato de coordenadas no reconocido para el incidente: {incidente}"
             )
-
-    # Añadir todas las subcapas al mapa
-    for subcapa in subcapas.values():
-        mapa.add_child(subcapa)
-
-    # Crear un diccionario para el control de capas agrupadas
-    grouped_layer_control = {
-        'Tipo de Robo': list(subcapas.values())
-    }
-
-    # Añadir el control de capas agrupadas al mapa
-    GroupedLayerControl(grouped_layer_control).add_to(mapa)
-    
+    mapa.add_child(capa)  
 
 def agregar_mapa_calor(mapa, datos: List[Incidente], capa):
     heat_data = [[incidente.coordenadas.latitud, incidente.coordenadas.longitud] for incidente in datos if isinstance(incidente.coordenadas, Coordenadas)]
@@ -112,7 +89,28 @@ def agregar_geojson(capa, geojson_data):
         )
     ).add_to(capa)
 
-def agregar_color_seguridad(capa, geojson_data, style_function):
+def agregar_color_seguridad(capa, geojson_data, dict_porcentaje_robos):
+    
+    def style_function(feature):
+        distrito = feature['properties']['nombdist'].lower()
+        porcentaje_robos = dict_porcentaje_robos.get(distrito)
+        
+        if porcentaje_robos is None:
+            color = 'grey'
+        elif porcentaje_robos > 50:
+            color = 'red'  # Inseguro
+        elif porcentaje_robos > 20:
+            color = 'orange'  # Moderadamente seguro
+        else:
+            color = 'green'  # Seguro
+
+        return {
+            'fillColor': color,
+            'fillOpacity': 0.5,
+            'weight': 2,
+            'color': 'black',
+        }
+    
     folium.GeoJson(
         geojson_data, 
         style_function=style_function, 
