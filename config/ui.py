@@ -1,6 +1,7 @@
 import ipywidgets as widgets
 from IPython.display import display
-from config.mapa import agregar_marcadores
+from config.mapa import agregar_marcadores, limpiar_marcador, crear_capa
+from folium import Map
 
 def create_date_picker(description):
     date_picker = widgets.DatePicker(
@@ -9,7 +10,7 @@ def create_date_picker(description):
     )
     return date_picker
 
-def create_button(start_date_picker, end_date_picker, mapa, datos_incidentes):
+def create_button(start_date_picker, end_date_picker, mapa: Map, datos_incidentes, capa_marcadores):
     button = widgets.Button(description="Filtrar Fechas")
     
     def on_button_clicked(b):
@@ -21,10 +22,10 @@ def create_button(start_date_picker, end_date_picker, mapa, datos_incidentes):
     
     return button
 
-def create_ui(mapa, datos_incidentes):
+def create_ui(mapa, datos_incidentes, capa_marcadores):
     start_date_picker = create_date_picker('Fecha de inicio')
     end_date_picker = create_date_picker('Fecha de fin')
-    button = create_button(start_date_picker, end_date_picker, mapa, datos_incidentes)
+    button = create_button(start_date_picker, end_date_picker, mapa, datos_incidentes, capa_marcadores)
     display(start_date_picker)
     display(end_date_picker)
     display(button)

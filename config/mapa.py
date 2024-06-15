@@ -1,6 +1,6 @@
 from typing import List
 from models.Incidente import Incidente, Coordenadas
-from folium.plugins import HeatMap
+from folium.plugins import HeatMap, MarkerCluster
 from folium import Map
 from folium.features import GeoJsonTooltip
 from datetime import datetime
@@ -11,7 +11,7 @@ import locale
 import models.Incidente
 import pandas as pd
 
-def crear_mapa():
+def crear_mapa() -> Map:
     mapa = folium.Map(location=[-14.0946, -75.7139], zoom_start=10)
     return mapa
 
@@ -21,12 +21,11 @@ def crear_capa(nombre: str, mostrar: bool):
     return capa
 
 def agregar_marcadores(mapa, capa, datos: List[Incidente], fecha_inicio=None, fecha_fin=None):
-    locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
+    cluster = MarkerCluster().add_to(capa)
+    
     for incidente in datos:
-        
         fecha_incidente = datetime.strptime(incidente.fecha, "%Y-%m-%d").date()
-        
-        if fecha_inicio is not None and fecha_fin is not None and not fecha_inicio <= fecha_incidente <= fecha_fin:
+        if fecha_inicio and fecha_fin and not fecha_inicio <= fecha_incidente <= fecha_fin:
             continue
         
         coordenadas_data = incidente.coordenadas
@@ -56,12 +55,8 @@ def agregar_marcadores(mapa, capa, datos: List[Incidente], fecha_inicio=None, fe
                 ),
                 tooltip=descripcion_corta,
                 icon=folium.Icon(color="red", icon="info-sign"),
-            ).add_to(capa)
-        else:
-            print(
-                f"Formato de coordenadas no reconocido para el incidente: {incidente}"
-            )
-    mapa.add_child(capa)  
+            ).add_to(cluster)
+    mapa.add_child(capa)
 
 def agregar_mapa_calor(mapa, datos: List[Incidente], capa):
     heat_data = [[incidente.coordenadas.latitud, incidente.coordenadas.longitud] for incidente in datos if isinstance(incidente.coordenadas, Coordenadas)]
@@ -133,5 +128,6 @@ def agregar_predicciones(mapa, capa, predicciones):
 def agregar_control_capas(mapa):
     folium.LayerControl().add_to(mapa)
     
-
-
+def limpiar_marcador(mapa, capa):
+    mapa.remove_child(capa)
+    
