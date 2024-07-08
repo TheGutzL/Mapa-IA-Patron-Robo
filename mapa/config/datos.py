@@ -16,11 +16,13 @@ def cargar_datos(url: str) -> List[Incidente]:
         incidente["casosAnteriores"] = [
             CasosAnteriores(**caso) for caso in incidente["casosAnteriores"]
         ]
-        incidente["coordenadas"] = Coordenadas(**incidente["coordenadas"])
+        if incidente["coordenadas"] is not None:
+            incidente["coordenadas"] = Coordenadas(**incidente["coordenadas"])
+        else:
+            incidente["coordenadas"] = Coordenadas(latitud=0.0, longitud=0.0)
         datos.append(Incidente(**incidente))
 
     return datos
-
 
 def cargar_geojson(ruta: str):
     with open(ruta, "r", encoding="utf-8") as archivo:

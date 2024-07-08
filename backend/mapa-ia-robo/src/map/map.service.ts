@@ -1,17 +1,20 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { exec } from 'child_process';
 import { rename } from 'fs/promises';
+import * as path from 'path';
 import { promisify } from 'util';
+import { MapGateway } from './gateway/map.gateway';
 const execAsync = promisify(exec);
 
 @Injectable()
 export class MapService {
+  constructor(private readonly mapGateway: MapGateway) {}
   private readonly logger = new Logger(MapService.name);
 
-  async updateMapData(robberyData: any): Promise<void> {
+  async updateMapData(): Promise<void> {
     try {
-      const notebookPath = '../../../../mapa/mapa-predicciones.ipynb';
-      const command = `jupyer nbconvert --to notebook --execute ${notebookPath} --output ${notebookPath}`;
+      const scriptPath = '../../mapa/mapa-predicciones.py';
+      const command = `python ${scriptPath}`;
 
       await execAsync(command);
       this.logger.log('Notebook ejecutado exitosamente');
@@ -21,13 +24,13 @@ export class MapService {
   }
 
   async moveGeneratedHtml(): Promise<void> {
-    const sourcePath = '../../../../mapa/build/mapa-predicciones.html';
-    const destinationPath = '';
+    const sourcePath = '../../mapa/build/mapa-predicciones.html';
+    const destinationPath = path.join('public/maps/mapa-predicciones.html');
     try {
       await rename(sourcePath, destinationPath);
       this.logger.log('Archivo HTML movido exitosamente');
     } catch (error) {
       this.logger.error('Error al mover el archivo HTML', error);
     }
-  };
+  }
 }

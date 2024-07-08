@@ -4,6 +4,7 @@ import { GatewayModule } from './websockets/websocket.module';
 import { RobberyModule } from './robbery/robbery.module';
 import { Robbery } from './robbery/model/robbery.entity';
 import { PreviousCase } from './robbery/model/previous-case.entity';
+import { MapModule } from './map/map.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { PreviousCase } from './robbery/model/previous-case.entity';
     }),
     RobberyModule,
     GatewayModule,
+    MapModule
   ],
   controllers: [],
   providers: [],

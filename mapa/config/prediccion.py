@@ -1,23 +1,27 @@
-import tensorflow as tf
 from keras._tf_keras.keras.models import Sequential
 from keras._tf_keras.keras.layers import Dense, Input
-
-import pandas as pd
-import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+from typing import List
+from models.Incidente import Incidente
+
+import tensorflow as tf
+import pandas as pd
+import numpy as np
 import warnings
-import json
 import re
+import sys
+import io
+import json
+import os
 
-
-def entrenar_modelo():
-    # Leer datos desde el archivo JSON
-    file_path = "data/noticias-datos-manuales.json"
-    with open(file_path, "r") as file:
-        data = json.load(file)
-
-    # Conversión a DataFrame
+def entrenar_modelo(data: List[Incidente]):
+    if isinstance(sys.stdout, io.TextIOWrapper):
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+        
+    if isinstance(sys.stderr, io.TextIOWrapper):
+        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+    
     df = pd.DataFrame(data)
 
     # Preprocesamiento de datos
@@ -40,6 +44,8 @@ def entrenar_modelo():
     df["día_semana"] = df["fecha"].dt.dayofweek
 
     df[["latitud", "longitud"]] = df["coordenadas"].apply(pd.Series)
+    
+    df = df[(df["latitud"] != 0) | (df["longitud"] != 0)]
 
     features = ["año", "mes", "día", "hora", "día_semana"]
     X = df[features]

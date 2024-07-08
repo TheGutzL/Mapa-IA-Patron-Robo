@@ -44,6 +44,9 @@ def agregar_marcadores(mapa, capa, datos: List[Incidente], fecha_inicio=None, fe
             continue
 
         coordenadas_data = incidente.coordenadas
+        if coordenadas_data.latitud == 0 and coordenadas_data.longitud == 0:
+            continue
+        
         if isinstance(coordenadas_data, Coordenadas):
             coordenadas = [coordenadas_data.latitud, coordenadas_data.longitud]
             contenido_popup = f"""

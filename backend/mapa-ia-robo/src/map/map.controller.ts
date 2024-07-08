@@ -1,4 +1,4 @@
-import { Controller, Get, Res } from '@nestjs/common';
+import { Controller, Get, Post, Res } from '@nestjs/common';
 import { Response } from 'express';
 import { MapService } from './map.service';
 
@@ -6,8 +6,14 @@ import { MapService } from './map.service';
 export class MapController {
   constructor(private readonly mapService: MapService) {}
 
-  @Get()
+  @Post('update')
   async getLatestMap(@Res() res: Response): Promise<void> {
-    res.sendFile('maps/latestMap.html', { root: 'public' });
+    try {
+      await this.mapService.updateMapData();
+      await this.mapService.moveGeneratedHtml();
+      res.status(200).send('Mapa actualizado exitosamente');
+    } catch (error) {
+      res.status(500).send('Error al actualizar el mapa');
+    }
   }
 }

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { MapGateway } from 'src/map/map.gateway';
+import { MapGateway } from 'src/map/gateway/map.gateway';
 import { Repository } from 'typeorm';
 import { CreateRobberyDto } from './dto/create-robbery.dto';
 import { Robbery } from './model/robbery.entity';
