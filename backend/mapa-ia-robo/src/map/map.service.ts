@@ -11,6 +11,11 @@ export class MapService {
   constructor(private readonly mapGateway: MapGateway) {}
   private readonly logger = new Logger(MapService.name);
 
+  async getPathToGeneratedHtml(): Promise<string> {
+    const destinationPath = path.resolve(__dirname, '../../public/maps/mapa-predicciones.html');
+    return destinationPath;
+  }
+
   async updateMapData(): Promise<void> {
     try {
       const scriptPath = '../../mapa/mapa-predicciones.py';

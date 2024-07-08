@@ -1,5 +1,5 @@
-import { CustomAxiosError } from "@/api/errors/CustomError";
 import { createRoboRequest } from "@/api/robos";
+import { CustomAxiosError } from "@/errors/CustomError";
 import { RoboSchema, RoboSchemaInfer } from "@/models/Robo";
 import {
   Box,
