@@ -1,0 +1,16 @@
+distritos_ica = [
+    "ica",
+    "la tinguiña",
+    "los aquijes",
+    "ocucaje",
+    "pachacutec",
+    "parcona",
+    "pueblo nuevo",
+    "salas",
+    "san jose de los molinos",
+    "san juan bautista",
+    "santiago",
+    "subtanjalla",
+    "tate",
+    "yauca del rosario",
+]

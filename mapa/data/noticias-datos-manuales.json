@@ -1,0 +1,432 @@
+[
+  {
+    "incidente": "asalto",
+    "tipoIncidente": "asalto a mano armada",
+    "ubicacion": "Panamericana Sur, altura de la Posta Médica de Macacona",
+    "distrito": "Subtanjalla",
+    "fecha": "2024-04-18",
+    "hora": "14:00",
+    "descripcion": "Una mujer de 29 años fue asaltada tras retirar 13 mil soles del Banco del Crédito del Perú (BCP) en el Centro Comercial Mega Plaza de Ica. Fue interceptada en la Panamericana Sur, altura de la Posta Médica de Macacona, distrito de Subtanjalla. La víctima recibió un impacto de bala en el pecho.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-06",
+        "detalle": "Pareja de esposos asaltada tras retirar 20 mil soles de Mega Plaza.",
+        "ubicacion": "Urb. Puente Blanco"
+      },
+      {
+        "fecha": "2024-01-10",
+        "detalle": "Hombre asaltado tras retirar 30 mil soles del BCP de Mega Plaza.",
+        "ubicacion": "Urb. El Remanzo"
+      },
+      {
+        "fecha": "2024-01-04",
+        "detalle": "Grupo de empresarios asaltados tras retirar 60 mil soles de Interbank y BCP de Mega Plaza.",
+        "ubicacion": "Hospital Regional de Ica"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.020542619123695,
+      "longitud": -75.76173295376083
+    }
+  },
+  {
+    "incidente": "asalto",
+    "tipoIncidente": "asalto en tienda",
+    "ubicacion": "Av. San Martín, Ica",
+    "distrito": "Ica",
+    "fecha": "2024-05-02",
+    "hora": "16:00",
+    "descripcion": "Un hombre armado ingresó a una tienda de electrodomésticos y robó 15 mil soles.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-15",
+        "detalle": "Asalto en joyería en el mismo distrito.",
+        "ubicacion": "Plaza de Armas de Ica"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0665,
+      "longitud": -75.725
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en cajero automático",
+    "ubicacion": "Centro Comercial El Quinde",
+    "distrito": "Ica",
+    "fecha": "2024-05-01",
+    "hora": "12:30",
+    "descripcion": "Un grupo de delincuentes robó 20 mil soles de un cajero automático.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-22",
+        "detalle": "Robo en un banco dentro del mismo centro comercial.",
+        "ubicacion": "Centro Comercial El Quinde"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0715,
+      "longitud": -75.732
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo a vivienda",
+    "ubicacion": "Urb. El Huarango",
+    "distrito": "Ica",
+    "fecha": "2024-05-05",
+    "hora": "02:00",
+    "descripcion": "Una vivienda fue asaltada y los ladrones se llevaron objetos de valor.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-18",
+        "detalle": "Robo similar en una casa cercana.",
+        "ubicacion": "Urb. El Huarango"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.076,
+      "longitud": -75.735
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "asalto a mano armada",
+    "ubicacion": "Calle La Mar",
+    "distrito": "Ica",
+    "fecha": "2024-04-21",
+    "hora": "15:00",
+    "descripcion": "Una mujer fue asaltada tras retirar dinero de un banco cercano.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-05",
+        "detalle": "Asalto similar en la misma calle.",
+        "ubicacion": "Calle La Mar"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.067,
+      "longitud": -75.722
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo a transeúnte",
+    "ubicacion": "Av. Cutervo",
+    "distrito": "Ica",
+    "fecha": "2024-04-28",
+    "hora": "18:30",
+    "descripcion": "Un hombre fue asaltado mientras caminaba por la avenida.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-10",
+        "detalle": "Robo similar en la misma avenida.",
+        "ubicacion": "Av. Cutervo"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0675,
+      "longitud": -75.7235
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "asalto a mano armada",
+    "ubicacion": "Plaza de Armas de Ica",
+    "distrito": "Ica",
+    "fecha": "2024-05-03",
+    "hora": "14:00",
+    "descripcion": "Un hombre fue asaltado en pleno centro de la ciudad.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-18",
+        "detalle": "Robo similar en la misma plaza.",
+        "ubicacion": "Plaza de Armas de Ica"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.065,
+      "longitud": -75.7225
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo de vehículo",
+    "ubicacion": "Av. Los Maestros",
+    "distrito": "Ica",
+    "fecha": "2024-05-07",
+    "hora": "20:00",
+    "descripcion": "Un auto fue robado mientras estaba estacionado en la calle.",
+    "casosAnteriores": [],
+    "coordenadas": {
+      "latitud": -14.0651,
+      "longitud": -75.7243
+    }
+  },
+  {
+    "incidente": "asalto",
+    "tipoIncidente": "asalto a mano armada",
+    "ubicacion": "Calle La Tinguiña",
+    "distrito": "Ica",
+    "fecha": "2024-05-08",
+    "hora": "12:00",
+    "descripcion": "Un hombre fue asaltado tras retirar dinero de un cajero automático.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-25",
+        "detalle": "Asalto similar en la misma calle.",
+        "ubicacion": "Calle La Tinguiña"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0703,
+      "longitud": -75.7204
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en comercio",
+    "ubicacion": "Av. Grau",
+    "distrito": "Ica",
+    "fecha": "2024-05-09",
+    "hora": "17:00",
+    "descripcion": "Una tienda de ropa fue asaltada y se llevaron mercadería y dinero.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-14",
+        "detalle": "Robo en una tienda de la misma avenida.",
+        "ubicacion": "Av. Grau"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.068,
+      "longitud": -75.7258
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo a transeúnte",
+    "ubicacion": "Av. Municipalidad",
+    "distrito": "Ica",
+    "fecha": "2024-05-11",
+    "hora": "19:00",
+    "descripcion": "Una mujer fue asaltada mientras caminaba por la avenida.",
+    "casosAnteriores": [],
+    "coordenadas": {
+      "latitud": -14.071,
+      "longitud": -75.734
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en transporte público",
+    "ubicacion": "Calle Salaverry",
+    "distrito": "Ica",
+    "fecha": "2024-05-12",
+    "hora": "18:00",
+    "descripcion": "Pasajeros de un autobús fueron asaltados por dos hombres armados.",
+    "casosAnteriores": [],
+    "coordenadas": {
+      "latitud": -14.0645,
+      "longitud": -75.7229
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en oficina",
+    "ubicacion": "Av. San Carlos",
+    "distrito": "Ica",
+    "fecha": "2024-05-13",
+    "hora": "21:00",
+    "descripcion": "Una oficina fue asaltada y se llevaron computadoras y dinero en efectivo.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-25",
+        "detalle": "Robo similar en otra oficina de la misma avenida.",
+        "ubicacion": "Av. San Carlos"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0691,
+      "longitud": -75.7312
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en estacionamiento",
+    "ubicacion": "Centro Comercial Plaza del Sol",
+    "distrito": "Ica",
+    "fecha": "2024-05-14",
+    "hora": "14:00",
+    "descripcion": "Un vehículo fue robado del estacionamiento del centro comercial.",
+    "casosAnteriores": [],
+    "coordenadas": {
+      "latitud": -14.0702,
+      "longitud": -75.7334
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en restaurante",
+    "ubicacion": "Av. Arenales",
+    "distrito": "Ica",
+    "fecha": "2024-05-15",
+    "hora": "22:00",
+    "descripcion": "Un grupo armado asaltó un restaurante y robó dinero y pertenencias de los clientes.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-30",
+        "detalle": "Robo similar en otro restaurante de la misma avenida.",
+        "ubicacion": "Av. Arenales"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0715,
+      "longitud": -75.7268
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en colegio",
+    "ubicacion": "Av. San José",
+    "distrito": "Ica",
+    "fecha": "2024-05-16",
+    "hora": "03:00",
+    "descripcion": "Un colegio fue asaltado y se llevaron equipos electrónicos y materiales educativos.",
+    "casosAnteriores": [],
+    "coordenadas": {
+      "latitud": -14.0721,
+      "longitud": -75.7252
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en farmacia",
+    "ubicacion": "Av. Cutervo",
+    "distrito": "Ica",
+    "fecha": "2024-05-17",
+    "hora": "11:00",
+    "descripcion": "Una farmacia fue asaltada y se llevaron dinero y medicamentos.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-28",
+        "detalle": "Robo similar en otra farmacia de la misma avenida.",
+        "ubicacion": "Av. Cutervo"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0677,
+      "longitud": -75.7237
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en mercado",
+    "ubicacion": "Mercado Arenales",
+    "distrito": "Ica",
+    "fecha": "2024-05-18",
+    "hora": "06:00",
+    "descripcion": "Varios puestos del mercado fueron asaltados por un grupo de delincuentes.",
+    "casosAnteriores": [],
+    "coordenadas": {
+      "latitud": -14.0734,
+      "longitud": -75.7291
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en centro comercial",
+    "ubicacion": "Centro Comercial Tottus",
+    "distrito": "Ica",
+    "fecha": "2024-05-19",
+    "hora": "20:30",
+    "descripcion": "Un grupo armado asaltó varias tiendas dentro del centro comercial.",
+    "casosAnteriores": [],
+    "coordenadas": {
+      "latitud": -14.0708,
+      "longitud": -75.7315
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo a repartidor",
+    "ubicacion": "Calle Bolívar",
+    "distrito": "Ica",
+    "fecha": "2024-05-20",
+    "hora": "15:00",
+    "descripcion": "Un repartidor fue asaltado y le robaron todos los paquetes que llevaba.",
+    "casosAnteriores": [],
+    "coordenadas": {
+      "latitud": -14.0672,
+      "longitud": -75.7244
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en hotel",
+    "ubicacion": "Av. La Angostura",
+    "distrito": "Ica",
+    "fecha": "2024-05-21",
+    "hora": "02:30",
+    "descripcion": "Un hotel fue asaltado y se llevaron dinero y pertenencias de los huéspedes.",
+    "casosAnteriores": [],
+    "coordenadas": {
+      "latitud": -14.074,
+      "longitud": -75.733
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo en banco",
+    "ubicacion": "Av. Matías Manzanilla",
+    "distrito": "Ica",
+    "fecha": "2024-05-22",
+    "hora": "13:00",
+    "descripcion": "Un banco fue asaltado y los delincuentes se llevaron una gran suma de dinero.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-18",
+        "detalle": "Robo similar en otro banco de la misma avenida.",
+        "ubicacion": "Av. Matías Manzanilla"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0737,
+      "longitud": -75.7298
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "asalto a mano armada",
+    "ubicacion": "Calle La Tinguiña",
+    "distrito": "La Tinguiña",
+    "fecha": "2024-05-08",
+    "hora": "12:00",
+    "descripcion": "Un hombre fue asaltado tras retirar dinero de un cajero automático.",
+    "casosAnteriores": [
+      {
+        "fecha": "2024-04-25",
+        "detalle": "Asalto similar en la misma calle.",
+        "ubicacion": "Calle La Tinguiña"
+      }
+    ],
+    "coordenadas": {
+      "latitud": -14.0703,
+      "longitud": -75.7204
+    }
+  },
+  {
+    "incidente": "robo",
+    "tipoIncidente": "robo a vivienda",
+    "ubicacion": "Calle San Martín",
+    "distrito": "Subtanjalla",
+    "fecha": "2024-05-07",
+    "hora": "02:30",
+    "descripcion": "Una casa fue asaltada y se llevaron objetos de valor y dinero.",
+    "casosAnteriores": [],
+    "coordenadas": {
+      "latitud": -14.0182,
+      "longitud": -75.7273
+    }
+  }
+]

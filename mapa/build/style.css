@@ -1,0 +1,45 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.foliumtooltip {
+}
+.foliumtooltip table {
+  margin: auto;
+}
+.foliumtooltip tr {
+  text-align: left;
+}
+.foliumtooltip th {
+  padding: 2px;
+  padding-right: 8px;
+}
+#map_7cecc91be98dfa825397b836dea6b3c5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+}
+.leaflet-container {
+  font-size: 1rem;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+#filters {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 10px;
+  z-index: 1000;
+  border: 1px solid #ccc;
+}
