@@ -7,7 +7,7 @@ export class MapGateway {
   server: Server;
 
   sendMapUpdate(data: any) {
-    console.log('Enviando evento MapUpdate:', data);
-    this.server.emit('mapUpdate', data);
+    // console.log('Enviando evento MapUpdate:', data);
+    this.server.emit('mapUpdate', "El mapa se updateo");
   }
 }

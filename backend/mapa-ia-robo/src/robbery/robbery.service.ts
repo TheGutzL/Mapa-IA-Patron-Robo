@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { MapGateway } from 'src/map/gateway/map.gateway';
+import { GeocodingService } from 'src/geocode/geocoding.service';
+import { MapService } from 'src/map/map.service';
 import { Repository } from 'typeorm';
 import { CreateRobberyDto } from './dto/create-robbery.dto';
 import { Robbery } from './model/robbery.entity';
@@ -10,7 +11,8 @@ export class RobberyService {
   constructor(
     @InjectRepository(Robbery)
     private robberyRepository: Repository<Robbery>,
-    private mapGateway: MapGateway,
+    private geocodingService: GeocodingService,
+    private mapService: MapService,
   ) {}
 
   async findAllRobberies(): Promise<Robbery[]> {
@@ -25,12 +27,25 @@ export class RobberyService {
 
   async createRobbery(robberyData: CreateRobberyDto): Promise<Robbery> {
     const robbery = this.robberyRepository.create(robberyData);
-    const savedRobbery = await this.robberyRepository.save(robbery);
-    this.mapGateway.sendMapUpdate({
-      message: 'New robbery added',
-      robbery: savedRobbery,
-    });
-    return savedRobbery;
+
+    const geocodeResponse = await this.geocodingService.geocode(
+      `${robbery.ubicacion} Ica`,
+    );
+    const { lat, lon } = geocodeResponse[0];
+
+    if (!robbery.coordenadas) {
+      robbery.coordenadas = {
+        latitud: parseFloat(lat),
+        longitud: parseFloat(lon),
+      };
+    }
+
+    return await this.robberyRepository.save(robbery);
+
+    // if (savedRobbery) {
+    //   await this.mapService.updateMapData()
+    //   await this.mapService.moveGeneratedHtml();
+    // }
   }
 
   async createMultipleRobberies(

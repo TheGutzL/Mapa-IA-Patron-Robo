@@ -227,6 +227,7 @@ const FormRobo = () => {
             leftIcon={<Send />}
             colorScheme="teal"
             variant="solid"
+            type="submit"
           >
             Enviar
           </Button>

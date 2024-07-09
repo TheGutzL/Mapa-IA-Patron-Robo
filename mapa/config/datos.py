@@ -3,13 +3,20 @@ from typing import List
 from models.Incidente import Incidente, CasosAnteriores, Coordenadas
 import pandas as pd
 import requests
+from cachetools import cached,TTLCache
+import aiohttp
+import aiofiles
+
+cache = TTLCache(maxsize=100, ttl=86400)
 
 def cargar_datos(url: str) -> List[Incidente]:
-    response = requests.get(url)
-    if response.status_code == 200:
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
         datos_json = response.json()
-    else:
-        raise Exception("Error al obtener los datos del endpoint")
+    except requests.exceptions.RequestException as e:
+        raise Exception(f"Error al obtener los datos del endpoint: {str(e)}")
+        
 
     datos = []
     for incidente in datos_json:
@@ -29,6 +36,34 @@ def cargar_geojson(ruta: str):
         datos_geojson = json.load(archivo)
     return datos_geojson
 
+@cached(cache)
+async def cargar_datos_async(url: str) -> List[Incidente]:
+    async with aiohttp.ClientSession() as session:
+        try:
+            async with session.get(url) as response:
+                response.raise_for_status()
+                datos_json = await response.json()
+        except requests.exceptions.RequestException as e:
+            raise Exception(f"Error al obtener los datos del endpoint: {str(e)}")
+        
+    datos = []
+    for incidente in datos_json:
+        incidente["casosAnteriores"] = [
+            CasosAnteriores(**caso) for caso in incidente["casosAnteriores"]
+        ]
+        if incidente["coordenadas"] is not None:
+            incidente["coordenadas"] = Coordenadas(**incidente["coordenadas"])
+        else:
+            incidente["coordenadas"] = Coordenadas(latitud=0.0, longitud=0.0)
+        datos.append(Incidente(**incidente))
+
+    return datos
+
+@cached(cache)
+async def cargar_geojson_async(ruta: str):
+    async with aiofiles.open(ruta, "r", encoding="utf-8") as archivo:
+        datos_geojson = json.loads(await archivo.read())
+    return datos_geojson
 
 def filtrar_geojson(geojson_data, distritos):
     filtered_features = []

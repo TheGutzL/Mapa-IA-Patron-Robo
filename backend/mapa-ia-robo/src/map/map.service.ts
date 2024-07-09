@@ -12,7 +12,10 @@ export class MapService {
   private readonly logger = new Logger(MapService.name);
 
   async getPathToGeneratedHtml(): Promise<string> {
-    const destinationPath = path.resolve(__dirname, '../../public/maps/mapa-predicciones.html');
+    const destinationPath = path.resolve(
+      __dirname,
+      '../../public/maps/mapa-predicciones.html',
+    );
     return destinationPath;
   }
 
@@ -34,6 +37,8 @@ export class MapService {
     try {
       await rename(sourcePath, destinationPath);
       this.logger.log('Archivo HTML movido exitosamente');
+
+      this.mapGateway.sendMapUpdate({ message: 'Mapa actualizado' });
     } catch (error) {
       this.logger.error('Error al mover el archivo HTML', error);
     }

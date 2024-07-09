@@ -51,7 +51,7 @@ const Home = () => {
       <iframe
         src="/mapa/mapa-predicciones.html"
         width="100%"
-        height="600"
+        height="800"
         className="mt-4"
         style={{ border: "none" }}
       ></iframe>

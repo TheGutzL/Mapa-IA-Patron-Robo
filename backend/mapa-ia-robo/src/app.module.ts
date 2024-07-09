@@ -1,13 +1,18 @@
 import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { GatewayModule } from './websockets/websocket.module';
-import { RobberyModule } from './robbery/robbery.module';
-import { Robbery } from './robbery/model/robbery.entity';
-import { PreviousCase } from './robbery/model/previous-case.entity';
+import { GeocodingModule } from './geocode/geocoding.module';
 import { MapModule } from './map/map.module';
+import { PreviousCase } from './robbery/model/previous-case.entity';
+import { Robbery } from './robbery/model/robbery.entity';
+import { RobberyModule } from './robbery/robbery.module';
+import { GatewayModule } from './websockets/websocket.module';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
@@ -20,7 +25,8 @@ import { MapModule } from './map/map.module';
     }),
     RobberyModule,
     GatewayModule,
-    MapModule
+    MapModule,
+    GeocodingModule,
   ],
   controllers: [],
   providers: [],
