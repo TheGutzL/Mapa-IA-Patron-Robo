@@ -50,7 +50,7 @@ def agregar_marcadores(mapa, capa, datos: List[Incidente], fecha_inicio=None, fe
         if isinstance(coordenadas_data, Coordenadas):
             coordenadas = [coordenadas_data.latitud, coordenadas_data.longitud]
             contenido_popup = f"""
-                <div style="color: red; font-size: 16px; font-weight: bold;">Descripción:</div>
+                <div className="text-3xl font-bold text-red-500">Descripción:</div>
                 <div style="color: black; font-size: 14px;">{incidente.descripcion}</div>
                 <div style="color: red; font-size: 16px; font-weight: bold;">Ubicación:</div>
                 <div style="color: black; font-size: 14px;">{incidente.ubicacion}</div>

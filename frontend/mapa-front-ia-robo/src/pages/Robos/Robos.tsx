@@ -1,6 +1,12 @@
 import { getRobosRequest } from "@/api/robos";
 import { RoboSchemaInfer } from "@/models";
 import {
+  Alert,
+  AlertDescription,
+  AlertIcon,
+  AlertTitle,
+  Center,
+  Spinner,
   Table,
   TableCaption,
   TableContainer,
@@ -16,29 +22,39 @@ const Robos = () => {
   const {
     data: robos,
     error,
-    isLoading,
+    isPending,
   } = useQuery<RoboSchemaInfer[], Error>({
     queryKey: ["robos"],
     queryFn: getRobosRequest,
   });
 
-  if (isLoading) return <div>Cargando...</div>;
-  if (error) return <div>Error al cargar los robos</div>;
+  if (isPending)
+    return (
+      <Center h="100vh">
+        <Spinner
+          thickness="4px"
+          speed="0.65s"
+          emptyColor="gray.200"
+          color="blue.500"
+          size="xl"
+        />
+      </Center>
+    );
 
-  // const [robos, setRobos] = useState<RoboSchemaInfer[]>([]);
-
-  // useEffect(() => {
-  //   const cargarRobos = async () => {
-  //     try {
-  //       const robosData = await getRobosRequest();
-  //       setRobos(robosData);
-  //     } catch (error) {
-  //       console.error("Error al cargar los robos:", error);
-  //     }
-  //   };
-
-  //   cargarRobos();
-  // }, []);
+  if (error)
+    return (
+      <Alert
+        status="error"
+        variant="solid"
+      >
+        <AlertIcon />
+        <AlertTitle>Error al cargar los datos</AlertTitle>
+        <AlertDescription>
+          No se pudieron cargar los datos de los robos. Por favor, intente
+          recargar la pagina
+        </AlertDescription>
+      </Alert>
+    );
 
   return (
     <div>

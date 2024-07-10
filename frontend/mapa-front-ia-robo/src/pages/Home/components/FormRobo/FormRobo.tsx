@@ -23,6 +23,8 @@ import { SubmitErrorHandler, SubmitHandler, useForm } from "react-hook-form";
 
 const FormRobo = () => {
   const toast = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -40,6 +42,7 @@ const FormRobo = () => {
   }, [setValue]);
 
   const onSubmit: SubmitHandler<RoboSchemaInfer> = async (data) => {
+    setIsSubmitting(true);
     try {
       setValue("casosAnteriores", []);
       await createRoboRequest(data);
@@ -61,6 +64,8 @@ const FormRobo = () => {
         duration: 9000,
         isClosable: true,
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -76,13 +81,13 @@ const FormRobo = () => {
 
   const handleIncidenteChange = (value: string) => {
     setIncidente(value);
-    setValue("incidente", value); // Update the form value
+    setValue("incidente", value);
   };
 
   return (
     <>
       <Box
-        className="max-w-md mx-auto mt-10"
+        className="max-w-md mx-auto mt-10 bg-white"
         borderWidth="lg"
         overflow="hidden"
         p={4}
@@ -224,8 +229,9 @@ const FormRobo = () => {
           </FormControl>
 
           <Button
+            isLoading={isSubmitting}
             leftIcon={<Send />}
-            colorScheme="teal"
+            colorScheme="blue"
             variant="solid"
             type="submit"
           >
