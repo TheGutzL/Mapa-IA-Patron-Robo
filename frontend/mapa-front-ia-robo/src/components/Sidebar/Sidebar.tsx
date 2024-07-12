@@ -42,22 +42,14 @@ const Sidebar = () => {
             </li>
           </ul>
         </div>
-        {/* <nav>
-          <Link
-            to="/"
-            className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-slate-950 text-white transition-colors"
-          >
-            <LogOut className="text-green-300" /> Cerrar Sesion
-          </Link>
-        </nav> */}
       </div>
 
-      <div className="xl:hidden fixed bottom-4 right-4 text-black rounded-full z-50">
+      <div className="xl:hidden fixed bottom-20 right-20 rounded-full z-50 transition-colors">
         <IconButton
+          isRound={true}
+          colorScheme={`${showMenu ? "teal" : "red"}`}
           onClick={() => setShowMenu(!showMenu)}
-          color="success"
-          size="medium"
-          aria-label="add"
+          aria-label="sidebar"
         >
           {showMenu ? (
             <DoorClosedIcon className="text-lg" />

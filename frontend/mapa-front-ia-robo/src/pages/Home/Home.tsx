@@ -8,7 +8,7 @@ import {
   Spinner,
   useToast,
 } from "@chakra-ui/react";
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import { DownloadIcon, Repeat } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { FormRobo } from "./components";
@@ -49,6 +49,14 @@ const Home = () => {
       document.body.appendChild(link);
       link.click();
       link.remove();
+
+      toast({
+        title: "Descargado con exito",
+        description: `El mapa se descargo exitosamente`,
+        status: "success",
+        duration: 5000,
+        isClosable: true,
+      });
     } catch (error) {
       toast({
         title: "Error",
@@ -60,36 +68,30 @@ const Home = () => {
     }
   };
 
-  const onUpdatedMap = async () => {
-    try {
-      const resUpdatedMap = await updateMapRequest();
-
+  const updateMapMutation = useMutation({
+    mutationFn: updateMapRequest,
+    onSuccess: () => {
       toast({
-        title: "Success",
-        description: `${resUpdatedMap.data}`,
+        title: "Mapa actualizado",
+        description: "El mapa se ha actualizado correctamente.",
         status: "success",
-        duration: 9000,
+        duration: 5000,
         isClosable: true,
       });
-
-      const response = await getMapWithPredictionsRequest();
-
-      if (response.data) {
-        const blob = new Blob([response.data], { type: "text/html" });
-        const url = URL.createObjectURL(blob);
-        if (iframeRef.current) {
-          iframeRef.current.src = url;
-        }
-      }
-    } catch (error) {
+    },
+    onError: (error) => {
       toast({
-        title: "Error",
-        description: `Error al actualizar el mapa: ${error}`,
+        title: "Error al actualizar el mapa",
+        description: `Error: ${error.message}`,
         status: "error",
         duration: 9000,
         isClosable: true,
       });
-    }
+    },
+  });
+
+  const onUpdateMap = () => {
+    updateMapMutation.mutate();
   };
 
   return (
@@ -114,7 +116,8 @@ const Home = () => {
         </Button>
         <Button
           leftIcon={<Repeat />}
-          onClick={onUpdatedMap}
+          onClick={onUpdateMap}
+          isLoading={updateMapMutation.isPending}
           colorScheme="orange"
         >
           Actualizar
